@@ -11,8 +11,14 @@ html, body {
     background-color: blanchedalmond;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 header {
-    padding: 20px;
+    text-align: center;
+    padding: 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color:cadetblue;
     color: #ffffff;
@@ -34,6 +40,9 @@ header nav {
 
 header nav ul {
     list-style-type:none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 header nav ul li {
@@ -53,33 +62,40 @@ p {
     font-size: 35px;
 }
 
+#profile {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+#profilepic {
+    height: 500px
+}
 
-#description {
-    width: 100vw;
-    height: auto;
+ 
+#about {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+}
+
+#about-text{
+    flex: 0 1 600px;
 }
 
 #projects {
-    width: 70vw;
-    height: 2px;
-    background:rgb(24, 24, 24);
-    margin-bottom: 5px;
-}
- 
-ul {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-}
+} 
 
 a {
     text-decoration: none;
     color: inherit;
 }
+
 
 #prj {
     display: flex;
@@ -108,42 +124,41 @@ a {
 
 #skills {
     width: 100vw;
-    height: auto;
-}
-
-#skills_logos {
-    width: 100vw;
-    height: auto;
     display: flex;
-    padding-bottom: 30px;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
-#skills_logos  img {
-    margin-left: 25px;
-    margin-right: 25px;
-    max-width: 20vw;
+#skills_logos {
+    display: flex;
+    padding-bottom: 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill_img {
+    height: 200px;
     transition: all 0.2s linear;
 }
-#skills_logos img:hover {
+
+.skill_img:hover {
     transform: scale(1.25);
 }
 
 
 #contact {
     width: 100vw;
-    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
+ 
 #contact_logos {
     width: 100vw;
-    height: 25vh;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -154,9 +169,9 @@ a {
     transition: all 0.2s linear;
 }
 
-#contact_logos  img:hover {
+ #contact_logos  img:hover {
     background-color: yellow;
-    transform: scale(1.1) rotate(10deg);
+    transform: scale(1.1) rotate(10deg); 
 }
 
 
@@ -167,6 +182,6 @@ footer {
     text-align: center;
 }
 
-footer h3 {
+footer h2 {
     font-size: 20px;
 }

@@ -4,6 +4,7 @@
 <!-- linking css -->
 <head>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="asset/css/style.css">
     <title> Umera's Portfolio </title>
 </head>
@@ -12,124 +13,97 @@
 
     <header> 
         <!-- My name to the center -->
-        <section id="name" style="text-align: center;"><h1> Umera Malek</h1></section>
-        <nav style="text-align: end;">
+        <section><h1> Umera Malek</h1></section>
+        <nav>
             <!-- links to the right of the page -->
             <ul>
                 <li>
-                    <a href="#About"> About me</a>
+                    <a href="#about"> About me</a>
                 </li>
                 <li>
-                    <a href="#Projects"> Projects</a>
+                    <a href="#projects"> Projects</a>
                 </li>
                 <li>
-                    <a href="#Skills"> My Skills</a>
+                    <a href="#skills"> My Skills</a>
                 </li>
                 <li>
-                    <a href="#Contact"> Contact</a>
+                    <a href="#contact"> Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <br>
 
-
-    <br>
-    <section>
+    <div id="profile">
         <!-- to the left -->
-        <img id="picture" src="./asset/image/grad-pic.JPG" alt=" Picture of me" width="30%">
-    </section>
-
-    <section id="description">
+        <img id="profilepic" src="./asset/image/grad-pic.JPG" alt=" Picture of me">
         <!-- to the side of the pic -->
-        <h2 id="about" class="titles"> About Me </h2>
-        <p>
-            My name is Umera. Currently I am studying full stack web develpment at University of Berkeley. 
-            I am hoping to learn a lot and make use of the knowledge at my career path. 
-            Everyday I am learning new things and absolutely loving the challenge. 
-        </p>
-    </section>
+        <div id= "about" >   
+            <div id="about-text">
+                <h2 class="titles"> About Me </h2>
+                <p>
+                    My name is Umera. Currently I am studying full stack web develpment at University of Berkeley. 
+                    I am hoping to learn a lot and make use of the knowledge at my career path. 
+                    Everyday I am learning new things and absolutely loving the challenge. 
+                </p>
+            </div> 
+        </div>
+    </div>
 
 
-    <br>
 
 
-    <br>
-    <section>
+    <section id="projects">
         <!-- project links (to the right of the page) -->
+        <h2 class="titles"> My Projects </h2>
         <ul>
-            <h2 class="titles"> My Projects </h2>
-        <nav id="projects">
-            <a href="https://umeramalek.github.io/homework-one/"  target="_blank">
-                <li id="prj"> Code Refactor (first project)</li>
-            </a>
-            <a href="https://alonzofroman.github.io/project-landing-page/" target="_blank">
-                <li id="prj"> Marvel Fansite</li>
-            </a>
-            <a href="https://mehdisafari77.github.io/css-snippet-cheatsheet/" target="_blank">
-                <li id="prj"> CSS Snippet Cheatsheet</li>
-            </a>
-        </nav>
+            <li id="prj"> 
+                <a href="https://umeramalek.github.io/homework-one/"  target="_blank"> Code Refactor (first project)</a>
+            </li>
+            <li id="prj">
+                <a href="https://alonzofroman.github.io/project-landing-page/" target="_blank">Marvel Fansite</a>
+            </li>
+            <li id="prj"> 
+                <a href="https://mehdisafari77.github.io/css-snippet-cheatsheet/" target="_blank">CSS Snippet Cheatsheet</a>
+            </li>
         </ul>
     </section>
-   
-
-   
-    <br>
 
 
-    <br>
-
-    <br>
-
-    <br>
-
-
-    <br>
-
-    <br>
-
-    <br>
-
-
-    <section id="Skills">
+    <section id="skills">
         <h2 class="titles"> My Skills</h2>
         <div id="skills_logos">
-            <img src="./asset/image/html-logo.png" alt="HTML logo">
-            <img src="./asset/image/css-logo.png" alt="CSS logo">
-            <img src="./asset/image/javascript-logo.png" alt="Javascript logo">
-            <img src="./asset/image/python-logo .png" alt="Python logo">
+            <!-- logos for skills -->
+            <img class="skill_img" src="./asset/image/html-logo.png" alt="HTML logo"> 
+            <img class="skill_img" src="./asset/image/css-logo.png" alt="CSS logo">
+            <img class="skill_img" src="./asset/image/javascript-logo.png" alt="Javascript logo">
+            <img class="skill_img" src="./asset/image/python-logo .png" alt="Python logo">
         </div>
     </section>
 
 
-    <br>
-
-
-    <br>
 
     <section id="contact">
         <h2 class="titles"> Contact Me</h2>
         <div id="contact_logos">
             <a href="www.linkedin.com/in/umeramalek" target="_blank">
-            <img src="./asset/image/linkedin-logo.png" alt="LinkedIn logo">
+            <img class="skill_img" src="./asset/image/linkedin-logo.png" alt="LinkedIn logo">
             </a>
             <a href="https://github.com/umeramalek" target="_blank">
-            <img src="./asset/image/github-logo.png" alt="Github logo">
+            <img class="skill_img" src="./asset/image/github-logo.png" alt="Github logo">
             </a>
             <a href="mailto:umeramalek796@gmail.com" target=_blank>
-            <img src="./asset/image/email-logo.png" alt="Email logo">
+            <img class="skill_img" src="./asset/image/email-logo.png" alt="Email logo">
             </a>
         </div>
     </section>
 
-
-    <br>
-
-
+<div>
     <footer>
         <h3>Made with ❤️️ </h3>
         <p> By Umera Malek 2021</p>
     </footer>
+</div>
+
 </body>
+</html>
