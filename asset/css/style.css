@@ -54,6 +54,7 @@ a {
     text-decoration: none;
 }
 
+/* profile pic and about me section */
 #about-text p {
     font-size: 16px;
     border: 6px solid;
@@ -90,6 +91,8 @@ a {
 #about-text{
     flex: 0 1 600px;
 }
+
+/* projects section code */
 
 #projects {
     display: flex;
@@ -129,6 +132,7 @@ a {
     font-weight: 400;
 }
 
+/* skills section code */
 #skills {
     width: 100vw;
     display: flex;
@@ -153,7 +157,7 @@ a {
     transform: scale(1.25);
 }
 
-
+/* contact section code */
 #contact {
     width: 100vw;
     display: flex;
@@ -181,7 +185,7 @@ a {
     transform: scale(1.1) rotate(10deg); 
 }
 
-
+/* footer code */
 footer {
     padding: 30px;
     clear: both;
@@ -193,6 +197,7 @@ footer h2 {
     font-size: 20px;
 }
 
+/* media responsive - kinda works  */
 @media only screen and (min-width: 768px) {
    .responsive  {
         background-color: gainsboro;
