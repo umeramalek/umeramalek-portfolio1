@@ -20,7 +20,7 @@ header {
     text-align: center;
     padding: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color:cadetblue;
+    background-color: cadetblue;
     color: #ffffff;
 }
 
@@ -54,9 +54,11 @@ a {
     text-decoration: none;
 }
 
-p {
+#about-text p {
     font-size: 16px;
-    border: 6px solid rgb(24, 24, 24);
+    border: 6px solid;
+    border-color: cadetblue;
+    border-style: ridge;
 } 
 
 .titles {
@@ -73,7 +75,8 @@ p {
 }
 #profilepic {
     height: 500px;
-    padding-top: 15px;
+    padding-top: 25px;
+    padding-left: 25px;
 }
 
  
@@ -188,4 +191,10 @@ footer {
 
 footer h2 {
     font-size: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+   .responsive  {
+        background-color: gainsboro;
+    }
 }
